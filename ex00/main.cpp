@@ -6,36 +6,11 @@
 /*   By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 11:06:14 by dcastor           #+#    #+#             */
-/*   Updated: 2025/08/28 11:15:09 by dcastor          ###   ########.fr       */
+/*   Updated: 2025/09/03 10:50:59 by dcastor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "whatever.hpp"
-#include <iostream>
-
-template <typename T>
-void swap(T &a, T &b)
-{
-	T tmp = a;
-	a = b;
-	b = tmp;
-}
-
-template <typename T>
-T &min(T &a, T &b)
-{
-	if (a < b)
-		return b;
-	return a;
-}
-
-template <typename T>
-T &max(T &a, T &b)
-{
-	if (a > b)
-		return a;
-	return b;
-}
 
 int main()
 {
