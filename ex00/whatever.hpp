@@ -6,7 +6,7 @@
 /*   By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/28 11:10:20 by dcastor           #+#    #+#             */
-/*   Updated: 2025/09/03 10:51:03 by dcastor          ###   ########.fr       */
+/*   Updated: 2025/09/04 22:09:12 by dcastor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ template <typename T>
 T &min(T &a, T &b)
 {
 	if (a < b)
-		return b;
-	return a;
+		return a;
+	return b;
 }
 
 template <typename T>

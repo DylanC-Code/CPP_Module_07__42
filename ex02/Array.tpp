@@ -6,7 +6,7 @@
 /*   By: dcastor <dcastor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/03 10:11:46 by dcastor           #+#    #+#             */
-/*   Updated: 2025/09/03 10:46:07 by dcastor          ###   ########.fr       */
+/*   Updated: 2025/09/04 22:18:17 by dcastor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 //  Canonical Form
 
 template <typename T>
-Array<T>::Array(const Array &src)
+Array<T>::Array(const Array &src) : _elements(0), _size(0)
 {
 	(*this) = src;
 }
@@ -45,13 +45,13 @@ Array<T>::~Array()
 // Custom Constructors
 
 template <typename T>
-Array<T>::Array() : _size(0)
+Array<T>::Array() : _elements(0), _size(0)
 {
-	this->_elements = new T[0];
+	this->_elements = new T[0]();
 }
 
 template <typename T>
-Array<T>::Array(unsigned int size) : _size(size)
+Array<T>::Array(unsigned int size) : _elements(0), _size(size)
 {
 	this->_elements = new T[size]();
 }
